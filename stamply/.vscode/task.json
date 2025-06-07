@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "tsc: build - backend",
+      "type": "shell",
+      "command": "tsc -p backend/tsconfig.json",
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": "$tsc"
+    }
+  ]
+}

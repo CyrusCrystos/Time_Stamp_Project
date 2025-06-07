@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TypeScript Backend",
+      "program": "${workspaceFolder}/backend/server.ts",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "cwd": "${workspaceFolder}/backend",
+      "outFiles": ["${workspaceFolder}/backend/**/*.ts"]
+    }
+  ]
+}

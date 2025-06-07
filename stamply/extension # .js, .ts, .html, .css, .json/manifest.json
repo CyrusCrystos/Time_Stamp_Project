@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Stamply",
+  "version": "0.2",
+  "description": "Universal Timestamping with Eco Impact Tracking",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": [
+    "https://chat.openai.com/*",
+    "https://claude.ai/*",
+    "https://gemini.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://claude.ai/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
