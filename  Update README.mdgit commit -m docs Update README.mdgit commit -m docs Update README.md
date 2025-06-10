@@ -9,8 +9,8 @@
 [32m+[m[32mStamply is a browser extension and backend API that:[m
 [32m+[m[32m- Automatically timestamps queries and responses on ChatGPT, Claude, and Gemini.[m
 [32m+[m[32m- Calculates and displays the environmental impact (energy and water usage) of each AI interaction.[m
-[32m+[[32m- Provides a dashboard for users to view cumulative eco-impact and manage privacy settings.[m
-[32m+[mm
+[32m+[m[32m- Provides a dashboard for users to view cumulative eco-impact and manage privacy settings.[m
+[32m+[m
 [32m+[m[32mFeatures[m
 [32m+[m
 [32m+[m[32m- Universal Timestamping: Cryptographically timestamps AI queries/responses.[m
