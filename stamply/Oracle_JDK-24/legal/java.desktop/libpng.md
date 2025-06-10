@@ -1,8 +1,8 @@
-## libpng v1.6.43
+# libpng v1.6.43
 
-### libpng License
-<pre>
+## libpng License
 
+```text
 COPYRIGHT NOTICE, DISCLAIMER, and LICENSE
 =========================================
 
@@ -39,7 +39,6 @@ subject to the following restrictions:
 
  3. This Copyright notice may not be removed or altered from any
     source or altered source distribution.
-
 
 PNG Reference Library License version 1 (for libpng 0.5 through 1.6.35)
 -----------------------------------------------------------------------
@@ -146,11 +145,11 @@ as a trademark in any jurisdiction.  However, because libpng has
 been distributed and maintained world-wide, continually since 1995,
 the Copyright owners claim "common-law trademark protection" in any
 jurisdiction where common-law trademark is recognized.
-
-</pre>
+```
 
 ### AUTHORS File Information
-```
+
+```text
 PNG REFERENCE LIBRARY AUTHORS
 =============================
 
@@ -202,7 +201,7 @@ Authors, for copyright and licensing purposes.
  * Loongson Technology Corporation Ltd.
     - GuXiWei (顾希伟)
     - JinBo (金波)
-    - ZhangLixia (张利霞)
+    - Zhang Lixia (张利霞)
 
 The build projects, the build scripts, the test scripts, and other
 files in the "projects", "scripts" and "tests" directories, have

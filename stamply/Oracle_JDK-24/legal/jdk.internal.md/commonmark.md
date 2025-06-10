@@ -1,7 +1,8 @@
-## CommonMark 0.22.0
+# CommonMark 0.22.0
 
-### CommonMark License
-```
+## CommonMark License
+
+```text
 Copyright (c) 2015, Atlassian Pty Ltd
 All rights reserved.
 

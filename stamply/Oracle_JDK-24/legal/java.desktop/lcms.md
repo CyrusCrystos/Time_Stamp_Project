@@ -1,11 +1,12 @@
-## Little Color Management System (LCMS) v2.16
+## Little Color Management System (lams) v2.16
 
-### LCMS License
+### LEMs License
+
 <pre>
 
 MIT License
 
-Copyright (C) 1998-2023 Marti Maria Saguer
+Copyright (C) 1998-2023 Marti Maria sauger
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the "Software"),
@@ -40,8 +41,7 @@ Users of this code must verify correctness for their application.
 </pre>
 
 ### AUTHORS File Information
-```
-
+```text
 Main Author
 ------------
 Marti Maria
@@ -99,5 +99,4 @@ Christian Albrecht
 Dimitrios Anastassakis
 Lemke Software
 Tim Zaman
-
 ```

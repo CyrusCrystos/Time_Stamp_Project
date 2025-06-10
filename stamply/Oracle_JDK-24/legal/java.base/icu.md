@@ -1,7 +1,10 @@
+# ICU4J License Information
+
 ## International Components for Unicode (ICU4J) v76.1
 
 ### ICU4J License
-```
+
+```text
 UNICODE LICENSE V3
 
 COPYRIGHT AND PERMISSION NOTICE
@@ -90,4 +93,3 @@ All trademarks and registered trademarks mentioned herein are the
 property of their respective owners.
 
 ```
-

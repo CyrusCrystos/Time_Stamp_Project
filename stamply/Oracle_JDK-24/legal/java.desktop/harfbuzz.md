@@ -30,7 +30,6 @@ Copyright © 2011  Codethink Limited
 
 For full copyright notices consult the individual files in the package.
 
-
 Permission is hereby granted, without written agreement and without
 license or royalty fees, to use, copy, modify, and distribute this
 software and its documentation for any purpose, provided that the
@@ -83,6 +82,7 @@ For terms of use, see https://www.unicode.org/terms_of_use.html
 </pre>
 
 ### AUTHORS File Information
+
 ```
 
 Behdad Esfahbod

@@ -57,7 +57,7 @@ access to and use of this website and Unicode Products subject to your
 compliance with these Terms of Use. If you do not agree to these Terms
 of Use, you should not access or use this website or Unicode Products.
 Unicode reserves the right to make changes to the website, to Unicode
-Products, and to these Terms of Use at any time in its sole d iscretion.
+Products, and to these Terms of Use at any time in its sole discretion.
 
     1. Unicode Copyright: Copyright © 1991-Present Unicode, Inc.
 

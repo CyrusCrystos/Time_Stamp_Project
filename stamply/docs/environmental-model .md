@@ -1,12 +1,14 @@
-Absolutely! Here’s a **docs/environmental-model.md** file you can add to your project’s `docs` folder. This file clearly explains your calculation sources and methodology, referencing your PDF and the actual code logic.
+
+# Environmental Model Documentation
+
+Here's a **docs/environmental-model.md** file you can add to your project's `docs` folder. This file clearly explains your calculation sources and methodology, referencing your PDF and the actual code logic.
 
 ---
-
-# docs/environmental-model.md
 
 ## Stamply Environmental Impact Model
 
 ### **Overview**
+
 Stamply estimates the environmental impact of each AI query by calculating the approximate water and electricity usage associated with running large language models (LLMs) such as ChatGPT, Claude, and Gemini. These estimates are based on public research, platform disclosures, and are designed to be transparent, reproducible, and easy to update as new data becomes available.
 
 ---
@@ -16,6 +18,7 @@ Stamply estimates the environmental impact of each AI query by calculating the a
 #### **1. Models and Parameters**
 
 For each AI platform, we define:
+
 - **Base Water Usage** (liters/query)
 - **Base Electricity Usage** (kWh/query)
 - **Complexity Multiplier** (adjusts for simple, medium, or complex queries)
@@ -33,19 +36,28 @@ These values are stored in both the backend and extension for consistency.
 #### **3. Calculation Formula**
 
 For each query:
-```
+
+impact = base_value * complexity_multiplier
+
 Water Usage (L)      = Base Water × Complexity Multiplier
 Electricity Usage (kWh) = Base Electricity × Complexity Multiplier
+
+```python
+# Example calculation
+impact = base_value * complexity_multiplier
 ```
+
 - **Complexity** is set to "medium" by default, but can be adjusted if the UI or API supports it.
 
 #### **4. Example Calculation**
 
 For a "medium" ChatGPT query:
+
 - Water: 0.10 × 1.0 = **0.10 L**
 - Electricity: 0.008 × 1.0 = **0.008 kWh**
 
 For a "complex" Gemini query:
+
 - Water: 0.12 × 1.6 = **0.192 L**
 - Electricity: 0.01 × 1.6 = **0.016 kWh**
 

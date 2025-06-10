@@ -5,12 +5,12 @@ body {
     color: #222;
 }
 h2 {
-    margin-top: 0;
+    margin-block-start: 0;
     color: #388e3c;
 }
 label {
     display: block;
-    margin-bottom: 12px;
+    margin-block-end: 12px;
     font-size: 1em;
 }
 .stamply-btn {
@@ -27,14 +27,14 @@ label {
     background: #e8f5e9;
     padding: 6px;
     border-radius: 4px;
-    margin-top: 4px;
+    margin-block-start: 4px;
 }
 .eco-impact, .eco {
     color: #388e3c;
     font-weight: bold;
 }
 details {
-    margin-top: 12px;
+    margin-block-start: 12px;
 }
 code {
     font-family: monospace;

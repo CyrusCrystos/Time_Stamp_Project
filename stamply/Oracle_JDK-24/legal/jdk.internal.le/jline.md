@@ -1,8 +1,8 @@
-## JLine v3.26.1
+# JLine v3.26.1
 
-### JLine License
-<pre>
+## JLine License
 
+```text
 Copyright (c) 2002-2023, the original author or authors.
 All rights reserved.
 
@@ -37,5 +37,4 @@ AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
 IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 OF THE POSSIBILITY OF SUCH DAMAGE.
-
-</pre>
+```

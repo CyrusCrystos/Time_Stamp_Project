@@ -1,9 +1,10 @@
 ## SipHash v1.0-68c8a7c
 
 ### Notice
+
 SipHash reference C implementation
 
-```
+```text
    Copyright (c) 2016 Jean-Philippe Aumasson <jeanphilippe.aumasson@gmail.com>
 
    To the extent possible under law, the author(s) have dedicated all copyright
@@ -17,10 +18,12 @@ SipHash reference C implementation
 ```
 
 ### Licenses
+
 The code is dual-licensed CCO and MIT
 
 #### MIT License
-```
+
+```text
 Copyright 2012-2024 JP Aumasson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -31,7 +34,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ```
 
 #### CC0 1.0 Universal
-```
+
+```text
 Statement of Purpose
 
 The laws of most jurisdictions throughout the world automatically confer

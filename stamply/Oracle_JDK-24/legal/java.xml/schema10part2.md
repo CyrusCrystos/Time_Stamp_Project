@@ -1,7 +1,8 @@
-## XML Schema Part 2: Datatypes Second Edition
+# XML Schema Part 2: Datatypes Second Edition
 
-### W3C Software and Document license
-<pre>
+## W3C Software and Document license
+
+```text
 Software and Document license - 2023 version
 
 Copied from:  https://www.w3.org/copyright/software-license-2023
@@ -46,5 +47,4 @@ Title to copyright in this work will at all times remain with copyright holders.
 
 Copyright © 2004 W3C® (MIT, ERCIM, Keio), All Rights Reserved. W3C liability,
 trademark and document use rules apply.
-
-</pre>
+```
