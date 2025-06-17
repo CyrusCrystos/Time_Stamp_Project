@@ -1,8 +1,6 @@
 
 # Environmental Model Documentation
 
-Here's a **docs/environmental-model.md** file you can add to your project's `docs` folder. This file clearly explains your calculation sources and methodology, referencing your PDF and the actual code logic.
-
 ---
 
 ## Stamply Environmental Impact Model
@@ -28,10 +26,10 @@ These values are stored in both the backend and extension for consistency.
 #### **2. Example Model Table**
 
 | Platform | Base Water (L/query) | Base Electricity (kWh/query) | Complexity Multipliers (simple / medium / complex) |
-|----------|---------------------|------------------------------|----------------------------------------------------|
-| ChatGPT  | 0.10                | 0.008                        | 0.8 / 1.0 / 1.5                                    |
-| Claude   | 0.09                | 0.007                        | 0.7 / 1.0 / 1.4                                    |
-| Gemini   | 0.12                | 0.010                        | 0.9 / 1.0 / 1.6                                    |
+| -------- | -------------------- | ---------------------------- | -------------------------------------------------- |
+| ChatGPT  | 0.10                 | 0.008                        | 0.8 / 1.0 / 1.5                                    |
+| Claude   | 0.09                 | 0.007                        | 0.7 / 1.0 / 1.4                                    |
+| Gemini   | 0.12                 | 0.010                        | 0.9 / 1.0 / 1.6                                    |
 
 #### **3. Calculation Formula**
 
