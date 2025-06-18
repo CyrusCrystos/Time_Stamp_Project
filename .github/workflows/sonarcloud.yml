@@ -20,7 +20,13 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: '11'
+
+      - name: Check Java version
+        run: java -version
+
+
+
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
