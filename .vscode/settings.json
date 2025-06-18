@@ -61,5 +61,9 @@
         "Zhou",
         "Zilong",
         "Zixu"
-    ]
+    ],
+    "sonarlint.connectedMode.project": {
+        "connectionId": "cyruscrystos",
+        "projectKey": "CyrusCrystos_Time_Stamp_Project"
+    }
 }
