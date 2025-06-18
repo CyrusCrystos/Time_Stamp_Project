@@ -1,0 +1,25 @@
+name: SonarCloud Scan
+
+on:
+  push:
+    branches:
+      - main
+      - True-Branch
+  pull_request:
+
+jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up JDK 11  # Or your project's JDK version
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          projectKey: your_project_key
+          organization: your_organization_key
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
