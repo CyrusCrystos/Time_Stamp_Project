@@ -27,8 +27,5 @@ jobs:
 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
-        with:
-          projectKey: CyrusCrystos_Time_Stamp_Project
-          organization: CyrusCrystos
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
