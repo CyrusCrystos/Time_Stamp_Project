@@ -6,20 +6,29 @@ on:
       - main
       - True-Branch
   pull_request:
+    branches:
+      - main
+      - True-Branch
 
 jobs:
   sonarcloud:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Set up JDK 11  # Or your project's JDK version
+
+      - name: Set up Java
         uses: actions/setup-java@v3
         with:
+          distribution: 'temurin'
           java-version: '11'
+
+      - name: Check Java version
+        run: java -version
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          projectKey: your_project_key
-          organization: your_organization_key
+          projectKey: CyrusCrystos_Time_Stamp_Project
+          organization: CyrusCrystos
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
