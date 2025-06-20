@@ -69,15 +69,23 @@ router.post('/api/timestamps', (req, res) => {
     algorithm: 'HMAC-SHA256'
   });
 });
+import express from 'express';
+const router = express.Router();
 
+// GET /something
 router.get('/something', (req, res) => {
-  if (true) {
+  // Example condition
+  if (req.query.secret === process.env.TSA_SECRET) {
     res.send('ok');
+  } else {
+    res.status(401).send('Unauthorized');
   }
-}); //
-router.post('/api/timestamps', (req, res) => {
-  // 
-}); 
-
-export default router; //
 });
+
+// POST /api/timestamps
+router.post('/api/timestamps', (req, res) => {
+  // Your logic here
+  res.send('Timestamp received');
+});
+
+export default router;
