@@ -1,0 +1,25 @@
+import chatgpt from './ai_providers/chatgpt.js';
+import claude from './ai_providers/claude.js';
+import gemini from './ai_providers/gemini.js';
+
+export const IMPACT_MODELS = { chatgpt, claude, gemini };
+export const COMPLEXITY_LEVELS = ['simple', 'medium', 'complex'];
+
+
+{
+  "chatgpt": {
+    "baseWater": 0.1,
+    "baseElectricity": 0.008,
+    "complexityMultiplier": { "simple": 0.8, "medium": 1.0, "complex": 1.5 }
+  },
+  "claude": {
+    "baseWater": 0.09,
+    "baseElectricity": 0.007,
+    "complexityMultiplier": { "simple": 0.7, "medium": 1.0, "complex": 1.4 }
+  },
+  "gemini": {
+    "baseWater": 0.12,
+    "baseElectricity": 0.01,
+    "complexityMultiplier": { "simple": 0.9, "medium": 1.0, "complex": 1.6 }
+  }
+}

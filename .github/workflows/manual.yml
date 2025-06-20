@@ -26,9 +26,11 @@ jobs:
         run: java -version
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
+        uses: SonarSource/sonarqube-scan-action@v1
         with:
-          projectKey: CyrusCrystos_Time_Stamp_Project
-          organization: CyrusCrystos
+          args: >
+            -Dsonar.projectKey=CyrusCrystos_Time_Stamp_Project
+            -Dsonar.organization=CyrusCrystos
+            -Dsonar.sources=stamply
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
