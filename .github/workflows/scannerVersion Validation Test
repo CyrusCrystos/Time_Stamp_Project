@@ -1,0 +1,24 @@
+scannerVersionValidationTest:
+  name: 'scannerVersion input validation'
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Run action with invalid scannerVersion
+      id: invalid_version
+      uses: ./
+      continue-on-error: true
+      with:
+        scannerVersion: "7.1.0-SNAPSHOT"
+        args: -Dsonar.scanner.internal.dumpToFile=./output.properties
+      env:
+        NO_CACHE: true
+        SONAR_HOST_URL: http://not_actually_used
+    - name: Assert failure of previous step
+      if: steps.invalid_version.outcome == 'success'
+      run: |
+        echo "Action with invalid scannerVersion should have failed but succeeded"
+        exit 1
+
+        
