@@ -17,7 +17,7 @@ jobs:
           fetch-depth: 0
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@2500896f6d1bdb6f6b1a2d2c8f1a6a1e4c3b2d1f # v5.2.0 SHA
+        uses: SonarSource/sonarqube-scan-action@v5.2.0
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: https://sonarcloud.io
@@ -34,14 +34,14 @@ jobs:
     name: 'scannerVersion input validation'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Run action with invalid scannerVersion
         id: invalid_version
         uses: SonarSource/sonarqube-scan-action@v5.2.0
- # v5.2.0 SHA
         continue-on-error: true
         with:
           scannerVersion: "7.1.0-SNAPSHOT"
