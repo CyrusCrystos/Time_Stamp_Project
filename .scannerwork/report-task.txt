@@ -1,0 +1,7 @@
+organization=cyruscrystos
+projectKey=CyrusCrystos_TimeStamping
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.64661
+dashboardUrl=https://sonarcloud.io/dashboard?id=CyrusCrystos_TimeStamping
+ceTaskId=AZeP8zTNULLZzlYD67Dr
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZeP8zTNULLZzlYD67Dr
