@@ -1,0 +1,57 @@
+name: SonarCloud Analysis & Scanner Version Validation
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  sonarcloud:
+    name: SonarCloud Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarqube-scan-action@v5.2.0
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: https://sonarcloud.io
+        with:
+          args: >
+            -Dsonar.organization=cyruscrystos
+            -Dsonar.projectKey=CyrusCrystos_TimeStamping
+            -Dsonar.sources=.
+            -Dsonar.c.file.suffixes=-
+            -Dsonar.cpp.file.suffixes=-
+            -Dsonar.objc.file.suffixes=-
+
+  scannerVersionValidationTest:
+    name: 'scannerVersion input validation'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run action with invalid scannerVersion
+        id: invalid_version
+        uses: SonarSource/sonarqube-scan-action@v5.2.0
+        continue-on-error: true
+        with:
+          scannerVersion: "7.1.0-SNAPSHOT"
+          args: -Dsonar.scanner.internal.dumpToFile=./output.properties
+        env:
+          NO_CACHE: true
+          SONAR_HOST_URL: http://not_actually_used
+
+      - name: Assert failure of previous step
+        if: steps.invalid_version.outcome == 'success'
+        run: |
+          echo "Action with invalid scannerVersion should have failed but succeeded"
+          exit 1
